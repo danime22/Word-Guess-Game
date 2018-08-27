@@ -28,6 +28,7 @@ h1 {
     color: #FFFB85;
     font-size: 83px;
     margin-top: 13px;
+    text-shadow: 8px 8px 5px #B3412F;
    
     
     
@@ -41,6 +42,7 @@ h2 {
   font-size: 85px;
   transform: skewY(-10deg);
   margin-top:-3%; 
+  text-shadow: 5px 5px 8px #FF0000;
   
 
 }
