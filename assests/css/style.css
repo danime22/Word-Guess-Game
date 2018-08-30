@@ -5,6 +5,8 @@ body {
     background-image: url("../images/thumb-1920-656029.png");
     /* box-sizing: border-box; */
     margin-top: -1%;
+     background-repeat:no-repeat;
+     background-size:cover;
      
 
   
