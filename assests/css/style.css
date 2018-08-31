@@ -86,10 +86,30 @@ section {
     
 }
 
+#col2 {
+    
+   
+    width: 490px;
+    height: 871px;
+    background-image: url("../images/phoenix-flame-girl-720P-wallpaper.jpg"); 
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   
+    
+    
+}
+
+
 img {
     /* margin-left: 13px;; */
     margin-right: auto;
     
+}
+
+.place {
+    margin-left:67px;
 }
 
 
@@ -136,8 +156,14 @@ ul, li {
     border-radius: 10px;
     font-weight: bold;
     color: #FF0000;
-    text-align: 11111111111
+    width: 111px;
+    margin-left: 175px;
+  
     
+}
+
+.container {
+    /* background-image: url("../images/e3d7c29300f16ba3d5b2f039ac3e22f5.jpg"); */
 }
 
 footer {
