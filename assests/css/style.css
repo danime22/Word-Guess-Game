@@ -82,6 +82,7 @@ section {
     border-right-style: dotted;
     width: 490px;
     height: 871px;
+    background-image: url("../images/skull-horror-free-abstracts-night-cities-amazing-funny-artsdarkfree-images-skeletons-funny-images-reaper-blue-grim-creepy.jpg"); 
     
     
 }
@@ -89,12 +90,13 @@ section {
 #col2 {
     
    
-    width: 490px;
+    width: 505px;
     height: 871px;
-    background-image: url("../images/phoenix-flame-girl-720P-wallpaper.jpg"); 
-    background-size: 300%;
-    background-repeat: no-repeat;
+    background-image: url("../images/1.jpg"); 
+    background-size: 150%;
+    background-repeat: repeat;
     background-position: center;
+    
     
    
     
@@ -115,9 +117,10 @@ img {
 
 p{
     text-align:center;
-    
-    font-size: 25px;
-    color: #EEEEEE;
+    text-shadow: 5px 5px 8px #FF0000;
+    font-size: 30px;
+    letter-spacing:2px;
+    color: white;
     font-weight: bold;
     font-family: 'Satisfy', cursive;
     margin: 17px auto;
