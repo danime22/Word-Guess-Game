@@ -107,7 +107,7 @@ section {
 img {
     /* margin-left: 13px;; */
     margin-right: auto;
-    
+   
 }
 
 .place {
@@ -154,20 +154,19 @@ ul, li {
     font-size: 30px;
 }
 
-.btn {
-    background-color: #D4CE6A;
+button {
+    background-color: #F4F5F5;
+    color:blue;
     border-radius: 10px;
     font-weight: bold;
-    color: #FF0000;
+    
     width: 111px;
     margin-left: 175px;
   
     
 }
 
-.container {
-    /* background-image: url("../images/e3d7c29300f16ba3d5b2f039ac3e22f5.jpg"); */
-}
+
 
 footer {
     color:#EEEEEE;
@@ -175,4 +174,135 @@ footer {
     background:linear-gradient(#614D9C,#3E7D8C);
     height: 43px;
     padding: 10px;
+}
+
+
+@media only screen and (max-width: 640px) {
+    section {
+        
+        height: 100%;
+        width:100%;
+    
+        
+        
+        
+    }
+   .container {
+       width:100%;
+     
+       
+   }
+
+   h1 {
+    font-size: 44px;
+    padding: 42px;
+    font-size: 52px;
+    
+    /* text-shadow: 8px 8px 5px #B3412F; */
+    text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
+   }
+
+   .he{
+       margin-top: -3%;
+   }
+
+   h2 {
+       font-size: 339%;
+       margin-top: -11%;
+   }
+
+   #col1 {
+       margin-left: 4%;
+   }
+   #col2 {
+    margin-left: 4%;
+    width: 91%;
+   }
+}
+
+
+@media only screen and (max-width: 768px) {
+    section {
+        
+        height: 100%;
+        width:100%;
+    
+        
+        
+        
+    }
+   .container {
+       width:100%;
+     
+       
+   }
+
+   h1 {
+    
+    padding: 42px;
+    font-size: 61px;
+    
+    /* text-shadow: 8px 8px 5px #B3412F; */
+    text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
+   }
+
+   .he{
+       margin-top: -3%;
+   }
+
+   h2 {
+       font-size: 410%;
+       margin-top: -13%;
+   }
+
+   #col1 {
+       margin-left: 16%;
+   }
+   #col2 {
+    margin-left: 16%;
+    width: 68%;
+   }
+}
+
+@media only screen and (max-width: 980px) {
+    section {
+        
+        height: 100%;
+        width:100%;
+    
+        
+        
+        
+    }
+   .container {
+       width:100%;
+     
+       
+   }
+
+   h1 {
+    
+    padding: 55px;
+    font-size: 80px;
+    
+    /* text-shadow: 8px 8px 5px #B3412F; */
+    text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
+   }
+
+   .he{
+       margin-top: -3%;
+   }
+
+   h2 {
+       font-size: 409%;
+       margin-top: -11%;
+   }
+
+   #col1 {
+       margin-left: 16%;
+   }
+   #col2 {
+    margin-left: 16%;
+    width: 68%;
+   }
 }
