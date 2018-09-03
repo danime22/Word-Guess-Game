@@ -33,7 +33,7 @@ h1 {
     color:  #FFFB85;
     font-size: 83px;
     margin-top: 13px;
-    /* text-shadow: 8px 8px 5px #B3412F; */
+    
     text-shadow:8px 8px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
    
     
@@ -68,14 +68,6 @@ section {
     background:linear-gradient(#614D9C,#3E7D8C);
 }
 
-/* #sec1 {
-   
-    border-right: 10px solid #0C3B27;
-    border-right-style: dotted;
-    width: 500px;
-    height: 755px;
-    
-} */
 
 #col1 {
     border-right: 2px solid #0C3B27;
@@ -99,10 +91,7 @@ audio {
     background-size: 150%;
     background-repeat: repeat;
     background-position: center;
-    
-    
-   
-    
+
     
 }
 
@@ -180,14 +169,12 @@ footer {
 }
 
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     section {
         
         height: 100%;
         width:100%;
-    
-        
-        
+  
         
     }
    .container {
@@ -197,9 +184,9 @@ footer {
    }
 
    h1 {
-    font-size: 44px;
+    font-size: 50px;
     padding: 42px;
-    font-size: 52px;
+   
     
     /* text-shadow: 8px 8px 5px #B3412F; */
     text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
@@ -224,7 +211,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     section {
         
         height: 100%;
@@ -267,7 +254,7 @@ footer {
    }
 }
 
-@media only screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
     section {
         
         height: 100%;
