@@ -78,8 +78,8 @@ section {
 } */
 
 #col1 {
-    border-right: 10px solid #0C3B27;
-    border-right-style: dotted;
+    border-right: 2px solid #0C3B27;
+    
     width: 490px;
     height: 871px;
     background-image: url("../images/skull-horror-free-abstracts-night-cities-amazing-funny-artsdarkfree-images-skeletons-funny-images-reaper-blue-grim-creepy.jpg"); 
@@ -87,6 +87,9 @@ section {
     
 }
 
+audio {
+    display: none;
+}
 #col2 {
     
    
