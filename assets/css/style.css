@@ -94,8 +94,13 @@ audio {
 
     
 }
+.show {
+    font-size: 3em;
+}
 
-
+.dork{
+    font-size: 250%;
+}
 img {
     /* margin-left: 13px;; */
     margin-right: auto;
