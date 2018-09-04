@@ -15,33 +15,33 @@ var anime = [
         themeSong: "assets/images/Gintama Opening 1.mp3"
     },
     {
-        title: "MYHEROACADEMIA",
+        title: "MY HERO ACADEMIA",
         img: "assets/images/thumb-1920-859804.png",
         themeSong: "assets/images/My Hero Academia - Official Opening.mp3"
     },
     {
-        title: "HUNTERXHUNTER",
+        title: "HUNTER X HUNTER",
         img: "assets/images/thumb-1920-566163.jpg",
         themeSong: "assets/images/Hunter X Hunter Opening 1.mp3"
     },
     {
-        title: "ONEPIECE",
+        title: "ONE PIECE",
         img: "assets/images/thumb-1920-606301.jpg",
         themeSong: "assets/images/One Piece Opening 1 Full Version.mp3"
     },
     {
-        title: "FAIRYTAIL",
+        title: "FAIRY TAIL",
         img: "assets/images/thumb-1920-748294.jpg",
         themeSong: "assets/images/Fairy Tail Opening 1  Snow Fairy  HD 1080p  Multi Subs .mp3"
     },
 
     {
-        title: "DRAGONBALLZ",
+        title: "DRAGON BALL Z",
         img: "assets/images/Poster_dragon_ball_z_z_warriors_by_dony910-d5bhg75.jpg",
         themeSong: "assets/images/Dragon Ball Z - 1989 Japanese Opening - Rare HD Quality.mp3"
     },
     {
-        title: "TOKYOGHOUL",
+        title: "TOKYO GHOUL",
         img: "assets/images/thumb-1920-607907.jpg",
         themeSong: "assets/images/Tokyo Ghoul Opening Unravel Full.mp3"
     }
@@ -109,9 +109,9 @@ function addSpaces(s) {
     var newStr = ""
     for (i = 0; i < s.length; i++) {
         newStr += s.charAt(i);
-        newStr += " ";
+        newStr +=String.fromCharCode(160);
     }
-
+ 
     return newStr;
 }
 
@@ -183,14 +183,20 @@ function getInitialDisplayText(title) {
     var displayText = "";
 
     for (i = 0; i < title.length; i++) {
-        displayText += "_";
+    
+        if(title.charAt(i)==" ") {
+            displayText+=" ";
+        } else {
+            displayText += "_";
+        }
     }
+    
 
     return displayText;
 }
 
 function getTotalGuessesAllowed(title) {
-    var letters = "";
+    var letters = " ";
     var numDistinct = 0;
 
     //find num of letters in title
