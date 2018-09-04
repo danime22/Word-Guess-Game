@@ -87,9 +87,9 @@ audio {
    
     width: 505px;
     height: 871px;
-    background-image: url("../images/1.jpg"); 
-    background-size: 150%;
-    background-repeat: repeat;
+    background-image: url("../images/wallpaper2you_36866.jpg"); 
+    background-size: 180%;
+    background-repeat: no-repeat;
     background-position: center;
 
     
@@ -143,7 +143,11 @@ ul, li {
     border: 2px solid #0C3B27;
     list-style-position: outside;
     border-radius: 5px;
- 
+    text-align:center;
+    text-shadow: 5px 5px 8px #FF0000;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .animg {
