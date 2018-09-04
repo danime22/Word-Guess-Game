@@ -104,6 +104,7 @@ img {
 
 #place {
     margin-left:67px;
+    height: 350px;
 }
 
 
@@ -116,11 +117,24 @@ p{
     font-weight: bold;
     font-family: 'Satisfy', cursive;
     margin: 17px auto;
+    line-height: 80%;
 }
 
+#wrong {
+    line-height: 130%;
+    
+}
+
+.alert {
+    color:red;
+    text-shadow: 3px 3px 5px white;
+    font-weight: bold;
+    font-size: 40px;
+}
 .anime {
     font-size: xx-large;
-    margin-left: -100px;
+    margin-left: 100px;
+    
 }
 
 ul, li {
@@ -169,13 +183,13 @@ footer {
 }
 
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 980px) {
     section {
         
         height: 100%;
         width:100%;
   
-        
     }
    .container {
        width:100%;
@@ -184,11 +198,11 @@ footer {
    }
 
    h1 {
-    font-size: 50px;
-    padding: 42px;
-   
     
-    /* text-shadow: 8px 8px 5px #B3412F; */
+    padding: 55px;
+    font-size: 80px;
+    
+    
     text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
    }
 
@@ -197,19 +211,18 @@ footer {
    }
 
    h2 {
-       font-size: 339%;
+       font-size: 409%;
        margin-top: -11%;
    }
 
    #col1 {
-       margin-left: 4%;
+       margin-left: 16%;
    }
    #col2 {
-    margin-left: 4%;
-    width: 91%;
+    margin-left: 16%;
+    width: 68%;
    }
 }
-
 
 @media screen and (max-width: 768px) {
     section {
@@ -232,7 +245,7 @@ footer {
     padding: 42px;
     font-size: 61px;
     
-    /* text-shadow: 8px 8px 5px #B3412F; */
+    
     text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
    }
 
@@ -242,7 +255,7 @@ footer {
 
    h2 {
        font-size: 410%;
-       margin-top: -13%;
+       margin-top: -10%;
    }
 
    #col1 {
@@ -254,28 +267,21 @@ footer {
    }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 640px) {
     section {
         
         height: 100%;
         width:100%;
-    
-        
-        
-        
+   
     }
    .container {
        width:100%;
-     
-       
+   
    }
 
    h1 {
-    
-    padding: 55px;
-    font-size: 80px;
-    
-    /* text-shadow: 8px 8px 5px #B3412F; */
+    font-size: 51px;
+    padding: 46px;
     text-shadow:2px 2px 2px #92544A, 0 0 1em blue, 0 0 0.2em blue;
    }
 
@@ -284,15 +290,17 @@ footer {
    }
 
    h2 {
-       font-size: 409%;
+       font-size: 339%;
        margin-top: -11%;
    }
 
    #col1 {
-       margin-left: 16%;
+       margin-left: 4%;
    }
    #col2 {
-    margin-left: 16%;
-    width: 68%;
+    margin-left: 4%;
+    width: 91%;
    }
 }
+
+
