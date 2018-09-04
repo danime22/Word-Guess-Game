@@ -65,13 +65,15 @@ var NUM_MISSESS_ALLOWED = 6;
 document.addEventListener('keypress', (event) => {
     var keyName = event.key.toUpperCase();
 
-    !gameState.gameStarted ?
-        startGame() :
+    if (gameState.gameStarted) {
         handleGuess(keyName);
+    } else {
+        startGame();
+    }
 });
 
 function handleGuess(keyName) {
-    // Check if guessed before and release
+    // Check if guessed before and return
     if (gameState.lettersGuessed.indexOf(keyName) >= 0 || gameState.displayString.indexOf(keyName) >= 0) {
         beep();
         return;
@@ -79,11 +81,6 @@ function handleGuess(keyName) {
 
 
     var charIndex = anime[gameState.gameNum].title.indexOf(keyName);
-
-    // Not guessed before so it uses a guess
-    gameState.remainingGuesses--;
-
-
     if (charIndex >= 0) {
         processCorrectGuess(keyName);
     } else {
@@ -135,6 +132,8 @@ function processCorrectGuess(keyName) {
 
 function processWrongGuess(keyName) {
     gameState.lettersGuessed += keyName;
+
+    gameState.remainingGuesses--;
 }
 
 function checkForGameEnd() {
@@ -196,20 +195,21 @@ function getInitialDisplayText(title) {
 }
 
 function getTotalGuessesAllowed(title) {
-    var letters = " ";
-    var numDistinct = 0;
+    // var letters = " ";
+    // var numDistinct = 0;
 
-    //find num of letters in title
-    for (i = 0; i < title.length; i++) {
-        var letter = title.charAt(i);
-        if (letters.indexOf(letter) < 0) // have not had this letter yet
-        {
-            letters += letter;
-            numDistinct++;
-        }
-    }
+    // //find num of letters in title
+    // for (i = 0; i < title.length; i++) {
+    //     var letter = title.charAt(i);
+    //     if (letters.indexOf(letter) < 0) // have not had this letter yet
+    //     {
+    //         letters += letter;
+    //         numDistinct++;
+    //     }
+    // }
 
-    return numDistinct + NUM_MISSESS_ALLOWED;
+    // return numDistinct + NUM_MISSESS_ALLOWED;
+    return NUM_MISSESS_ALLOWED;
 }
 
 function beep() {
